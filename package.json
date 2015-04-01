@@ -1,0 +1,27 @@
+{
+  "name": "linkedin-extractor",
+  "version": "0.1.0",
+  "description": "Given a LinkedIn profie URL returns structured metadata.",
+  "main": "app.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/blikkhq/linkedin-extractor"
+  },
+  "author": "Denny Britz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blikkhq/linkedin-extractor/issues"
+  },
+  "homepage": "https://github.com/blikkhq/linkedin-extractor",
+  "dependencies": {
+    "bluebird": "^2.9.21",
+    "cheerio": "^0.19.0",
+    "underscore": "^1.8.2"
+  },
+  "devDependencies": {
+    "chai": "^2.2.0"
+  }
+}
