@@ -14,7 +14,9 @@ curl -XPOST http://localhost:3000/extract \
   --data '{"url": "https://www.linkedin.com/in/studentsample"}'
 ```
 
-## Example Response for `https://www.linkedin.com/in/studentsample`
+## Example Response
+
+For `https://www.linkedin.com/in/studentsample`:
   
 ```json
 {
