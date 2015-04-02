@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/blikkhq/linkedin-extractor",
   "dependencies": {
+    "blikk-logjs": "^0.1.2",
     "bluebird": "^2.9.21",
     "body-parser": "^1.12.2",
     "cheerio": "^0.19.0",
