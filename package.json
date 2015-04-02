@@ -29,7 +29,8 @@
   },
   "devDependencies": {
     "chai": "^2.2.0",
-    "supertest-as-promised": "^1.0.0",
-    "supertest": "^0.15.0"
+    "nock": "^1.4.0",
+    "supertest": "^0.15.0",
+    "supertest-as-promised": "^1.0.0"
   }
 }
