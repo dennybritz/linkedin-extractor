@@ -1,4 +1,4 @@
-An API that extracts metadata from a given Linkedin URL. Currentltly the API only returns basic and experience information but it will be extended over time to include all Linkedin sections.
+An API that extracts metadata from a given Linkedin URL. Currentltly the API only returns basic and experience information but it will be extended over time to include all LinkedIn sections.
 
 ## Start with Docker
 
@@ -64,5 +64,5 @@ curl -XPOST http://localhost:3000/extract \
 
 ```
 npm install
-npm start
+LOG_NAME=production npm start
 ```
