@@ -6,7 +6,7 @@ WORKDIR /app
 
 RUN \
   rm -rf node_modules .env log && \
-  npm install
+  npm install --production
 
 ENV NODE_ENV production
 ENV LOG_NAME linkedin-extractor
