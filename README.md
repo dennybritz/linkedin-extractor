@@ -1,3 +1,5 @@
+[![Circle CI](https://circleci.com/gh/blikkhq/linkedin-extractor.svg?style=svg)](https://circleci.com/gh/blikkhq/linkedin-extractor)
+
 An API that extracts metadata from a given Linkedin URL. Currentltly the API only returns basic and experience information but it will be extended over time to include all LinkedIn sections.
 
 ## Start with Docker
