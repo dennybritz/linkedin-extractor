@@ -1,24 +1,19 @@
 machine:
-  services:
-    - docker
   environment:
-    DOCKER_EMAIL: deploy@blikk.co
-    DOCKER_USER: blikkdeploy
-    LOG_NAME: linkedin-extractor
-    VERSION: 0.1.0
+    NPM_EMAIL: deploy@blikk.co
+    NPM_USERNAME: blikk
 
 dependencies:
-  pre:
-    - docker login -e $DOCKER_EMAIL  -u $DOCKER_USER -p $DOCKER_PASSWORD
-
-test:
-  post:
-    - docker build -t blikk/linkedin-extractor .
-    - docker tag blikk/linkedin-extractor:latest blikk/linkedin-extractor:$CIRCLE_SHA1
-    - docker tag blikk/linkedin-extractor:latest blikk/linkedin-extractor:$VERSION
+  pre: 
+    - | 
+      npm adduser <<!
+      $NPM_USERNAME
+      $NPM_PASSWORD
+      $NPM_EMAIL
+      !
 
 deployment:
-  hub:
+  npm:
     branch: master
     commands:
-      - docker push blikk/linkedin-extractor
+      - npm publish
