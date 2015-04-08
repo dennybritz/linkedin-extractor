@@ -1,5 +1,6 @@
 'use strict';
 
+var _ = require('lodash');
 var ProfileParser = require('../lib/profileParser');
 var fs = require('fs');
 var expect = require('chai').expect;
@@ -60,5 +61,30 @@ describe('Linkedin Profile Parser', function(){
     });
 
   });
+
+  describe('#getSkills', function(){
+
+    it('should work', function(){
+      var skills = pp.getSkills();
+      expect(skills.length).to.eql(9);
+      expect(_.pluck(skills, 'skill')).to.eql([
+        'Marketing', 'Advertising', 'Presentations', 'Marketing Communications', 'Sales',
+        'Social Media Marketing', 'Adobe Creative Suite', 'PowerPoint', 'Product Marketing']);
+    });
+
+  });
+
+  describe('#getUrlResources', function(){
+
+    it('should work', function(){
+      var result = pp.getUrlResources();
+      expect(result.length).to.eql(1);
+      expect(result[0]).to.eql({
+        name: 'Personal Website',
+        url: 'http://www.careers.ucr.edu'
+      });
+    });
+
+  });  
 
 });
