@@ -85,6 +85,24 @@ describe('Linkedin Profile Parser', function(){
       });
     });
 
-  });  
+  });
+
+  describe('#getEducation', function(){
+
+    it('should work', function(){
+      var result = pp.getEducation();
+      expect(result.length).to.eql(1);
+      expect(result[0]).to.eql({
+        id: '108823398',
+        schoolName: 'University of California, Riverside',
+        degree: 'Bachelor of Science in Business Administration',
+        fieldOfStudy: 'Marketing',
+        grade: 'Sophomore',
+        startDate: { year: 2011 },
+        endDate: { year: 2015 }
+      });
+    });
+
+  });    
 
 });
