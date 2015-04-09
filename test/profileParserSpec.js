@@ -42,7 +42,7 @@ describe('Linkedin Profile Parser', function(){
     it('should work', function(){
       var experiences = pp.getExperience();
       expect(experiences.length).to.eql(3);
-      expect(experiences[0].id).to.eql('experience-278792035');
+      expect(experiences[0].id).to.eql('278792035');
       expect(experiences[0].title).to.eql('Advertising Account Executive');
       expect(experiences[0].company).to.eql('The Highlander Newspaper');
       expect(experiences[0].summary).to.eql('•Manage more than 100 clients and their advertising needs.\n' + 
