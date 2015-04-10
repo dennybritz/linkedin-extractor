@@ -1,6 +1,6 @@
 {
   "name": "linkedin-extractor",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Given a Linkedin profie URL returns structured metadata.",
   "main": "lib/urlExtractor.js",
   "scripts": {
